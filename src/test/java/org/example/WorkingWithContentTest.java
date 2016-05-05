@@ -12,7 +12,7 @@ import javax.jcr.SimpleCredentials;
 public class WorkingWithContentTest {
 
     @Test
-    public static void workingWithContent() throws Exception {
+    public  void workingWithContent() throws Exception {
         Repository repository = JcrUtils.getRepository();
         Session session = repository.login(
                 new SimpleCredentials("admin", "admin".toCharArray()));
